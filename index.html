@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>我的简历</title>
+    <!--设置视口-->
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/index.css">
+
     <script src="js/swiper.min.js"></script>
+    <!--计算font-size-->
+    <script>
+        (function () {
+            computedFZ();
+            //页面加载的时候计算一下font-size的值
+            window.addEventListener("resize",computedFZ,false)
+            function computedFZ() {
+                let desW=640,
+                    winW=document.documentElement.clientWidth||document.body.clientWidth;
+                document.documentElement.style.fontSize=winW/desW*100+"px" ;
+            }
+        })();
+    </script>
 </head>
 <body>
+
 <div class="music">
     <div class="control"><audio src="audio/serenade.mp3" loop id="serenade" preload="none"></audio></div>
     <div class="control_after"></div>
@@ -276,19 +292,16 @@
     </div>
 </div>
 <script>
-    var desW=640,
-         winW=document.documentElement.clientWidth||document.body.clientWidth;
-    document.documentElement.style.fontSize=winW/desW*100+"px" ;
-    var mySwiper=new Swiper('.swiper-container',{
+    let mySwiper=new Swiper('.swiper-container',{
         direction:'vertical',
         initialSlide:0,
         pagination:'.swiper-pagination',
         slideActiveClass:'active',
         nextButton:'.arrow'
     });
-    var music=document.querySelector(".music");
-    var control=document.querySelector(".control");
-    var serenade=document.querySelector("#serenade");
+    let music=document.querySelector(".music");
+    let control=document.querySelector(".control");
+    let serenade=document.querySelector("#serenade");
     window.setTimeout(function () {
         serenade.play();
         music.style.opacity=1;
