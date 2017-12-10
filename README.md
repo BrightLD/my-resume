@@ -1,6 +1,6 @@
 # my-resume
 this is my H5 resume
-#####主要依赖于swiper
+主要依赖于swiper
 ````
 //样式必须这样写，swiper的使用规范
 <div class="swiper-container">
@@ -12,15 +12,14 @@ this is my H5 resume
  </div>
 </div
 ````
-
-#####背景音乐使用H5标签audio
+背景音乐使用H5标签audio
 
 ````
 <audio src="需要的音频路径"></audio>
 ````
 H5新增加的标签，用来引入音频
 属性：
-> autoplay：默认值为false，当指定为true 的时候，页面打开的时候就会自动播放，不会等等资源。
+> autoplay：默认值为false，当指定为true 的时候，页面打开的时候就会自动播放，不会等资源。
 
 > controls：是否显示自带的播放设置
 
