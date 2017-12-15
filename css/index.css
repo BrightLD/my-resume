@@ -26,9 +26,9 @@ body{ font:0.26rem/0.52rem "微软雅黑"; color: #fff;}
 .big_pic{ position: absolute; width:2.4rem; height: 2.4rem; top:2.34rem; left:50%; margin-left:-1.2rem; overflow: hidden;}
 .big_pic img:nth-child(1){ position: absolute; top:50%; left:50%; margin-top:-0.88rem; margin-left:-0.87rem; border-radius: 50%; width:1.74rem; height: 1.76rem; }
 .big_pic img:nth-child(2){ position: absolute; top:0; left: 0; width:100%; height: 100%;}
-.s1_txt{ position: absolute; top:5.5rem; width:100%;}
-.s1_txt div{ position: absolute; text-align: center; font-size: 0.36rem;}
-.s1_txt .s1_txt1{ font-size: 0.64rem; margin-left:-0.1rem;
+.s1_txt{ position: absolute; top:5.5rem; width:100%;height:2.5rem}
+.s1_txt div{ position: absolute;font-size: 0.36rem;}
+.s1_txt .s1_txt1{ font-size: 0.64rem;
 }
 .s1_txt .s1_txt2{ top:1.04rem;}
 .s1_txt .s1_txt3{ top:1.82rem;}
@@ -36,9 +36,11 @@ body{ font:0.26rem/0.52rem "微软雅黑"; color: #fff;}
 /*s1.active*/
 .slide1.active .big_pic img:nth-child(1){ -webkit-animation: bounceIn 1s 0.3s both; animation: bounceIn 1s 0.3s both;}
 .slide1.active .big_pic img:nth-child(2){ -webkit-animation: rotate 5s infinite linear; animation: rotate 5s infinite linear;}
-.slide1.active .s1_txt .s1_txt1{ left:2.82rem; -webkit-animation: fadeInLeft 1s 1.3s both; animation: fadeInLeft 1s 1.3s both;}
-.slide1.active .s1_txt .s1_txt2{ left:2.5rem; -webkit-animation: fadeInRight 1s 2.3s both; animation: fadeInRight 1s 2.3s both;}
-.slide1.active .s1_txt .s1_txt3{ left:1rem; -webkit-animation: fadeInLeft 1s 3.3s both; animation: fadeInLeft 1s 3.3s both;}
+.slide1.active .s1_txt .s1_txt1{ left:2.4rem
+    ;-webkit-animation: fadeInLeft 1s 1.3s both; animation: fadeInLeft 1s 1.3s both;}
+.slide1.active .s1_txt .s1_txt2{
+    left: 2.2rem; -webkit-animation: fadeInRight 1s 2.3s both; animation: fadeInRight 1s 2.3s both;}
+.slide1.active .s1_txt .s1_txt3{left:0.85rem ;-webkit-animation: fadeInLeft 1s 3.3s both; animation: fadeInLeft 1s 3.3s both;}
 @-webkit-keyframes bounceIn {
     0%{ opacity: 0; -webkit-transform: scale(1.6); transform: scale(1.6);}
     30%{ opacity: 1; -webkit-transform: scale(0.9); transform: scale(0.9);}
@@ -180,34 +182,22 @@ body{ font:0.26rem/0.52rem "微软雅黑"; color: #fff;}
 .slide4.active .my_skills .li6{ -webkit-animation: zoomInDown 1s 5.1s both; animation: lightSpeedIn 1s 5.1s both;}
 
 /*s5*/
-.my_works{ position: absolute; top:4.22rem;}
-.my_works ul li{ position: absolute; width:1.54rem; text-align: center;}
-.my_works ul li img{ width:1.54rem; height: 1.54rem;}
-.my_works ul li:nth-child(1){ left:0.84rem;}
-.my_works ul li:nth-child(2){ left:2.5rem;}
-.my_works ul li:nth-child(3){ left:4.14rem;}
-.my_works ul li:nth-child(4){ left:0.84rem; top:2.46rem;}
-.my_works ul li:nth-child(5){ left:2.5rem; top:2.46rem;}
-.my_works ul li:nth-child(6){ left:4.14rem; top:2.46rem;}
 
-/*s5.active*/
-.slide5.active .head_pic img:nth-child(1){ -webkit-animation: bounceIn 1s 0.3s both; animation: bounceIn 1s 0.3s both;}
-.slide5.active .head_pic img:nth-child(2){ -webkit-animation: rotate 5s infinite linear; animation: rotate 5s infinite linear;}
-.slide5.active .head_icon img:nth-child(1){ -webkit-animation: fadeInDown 1s 1s both; animation: fadeInDown 1s 1s both;}
-.slide5.active .head_icon img:nth-child(2){ -webkit-animation: fadeInDown 1s 1.1s both; animation: fadeInDown 1s 1.1s both;}
-.slide5.active .head_icon img:nth-child(3){ -webkit-animation: fadeInDown 1s 1.2s both; animation: fadeInDown 1s 1.2s both;}
-.slide5.active .head_icon img:nth-child(4){ -webkit-animation: fadeInDown 1s 1.3s both; animation: fadeInDown 1s 1.3s both;}
-.slide5.active .head_nav img{ -webkit-animation: fadeInLeft 1s 1.6s both; animation: fadeInLeft 1s 1.6s both;}
+.my_works{ position: absolute; top:4.22rem;}
+.my_works ul li{ position: absolute; width:7rem; text-align: center;overflow: hidden}
+/*.my_works ul li img{ width:1.54rem; height: 1.54rem;}*/
+.my_works ul li:nth-child(1){top:0.6rem;}
+.my_works ul li:nth-child(2){top:1.6rem;}
+.my_works ul li:nth-child(3){top:2.6rem;}
+.my_works ul li:nth-child(4){top:3.6rem;}
+
 .slide5.active .nav_item{ -webkit-animation: fadeIn 1s 2.1s both; animation: fadeIn 1s 2.1s both;}
 .slide5.active .nav_cur{ -webkit-animation: fadeInLeft 1s 2.1s both; animation: fadeInLeft 1s 2.1s both;}
-.slide5.active .my_works .w1{ -webkit-animation: bounceInRight 1s 3.1s both; animation: bounceInRight 1s 3.1s both;}
+.slide5.active .my_works .w1{ -webkit-animation: bounceInLeft 1s 3.1s both; animation: bounceInLeft 1s 3.1s both;}
 .slide5.active .my_works .w2{ -webkit-animation: bounceInRight 1s 3.5s both; animation: bounceInRight 1s 3.5s both;}
 .slide5.active .my_works .w3{ -webkit-animation: bounceInRight 1s 3.9s both; animation: bounceInRight 1s 3.9s both;}
 .slide5.active .my_works .w4{ -webkit-animation: bounceInLeft 1s 4.3s both; animation: bounceInLeft 1s 4.3s both;}
-.slide5.active .my_works .w5{ -webkit-animation: bounceInLeft 1s 4.7s both; animation: bounceInLeft 1s 4.7s both;}
-.slide5.active .my_works .w6{ -webkit-animation: bounceInLeft 1s 5.1s both; animation: bounceInLeft 1s 5.1s both;}
 
-/*s6*/
 .s6_txt{ position: absolute; top:5.5rem; width:100%;}
 .s6_txt div{ position: absolute; width:100%; text-align: center; font-size: 0.36rem;}
 .s6_txt .s6_txt1{ font-size: 0.64rem;}
